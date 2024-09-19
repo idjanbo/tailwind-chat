@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="webkit" name="renderer" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+  <title>欢迎光临</title>
+  <link href="/static/css/loading.css" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body style="height: 100vh;">
+  <noscript>请开启浏览器 js 功能</noscript>
+  <div id="app">
+    <figure>
+      <div class="dot white"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </figure>
+    <div style="width: 100%;font-family: Arial, sans-serif;text-align: center;margin-top: 20px;">
+      <div style="display: flex;justify-content: center;">
+        <div></div>
+        <div style="text-align: left;">
+          <h5>如<span style="color:red">长时间</span>停留在此页面</h5>
+          <h5>请更换浏览器使用</h5>
+        </div>
+        <div></div>
+      </div>
+      <p style="color: gray;font-size: 11px;margin-top: 20px;">点击复制下面链接</p>
+      <div id="page-url" style="height: 20px;line-height: 20px;overflow: hidden;font-size: 11px;font-weight: 300;">
+      </div>
+      <p id="copied" style="font-size: 11px;color: gray;"></p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    document.getElementById('page-url').innerText = window.location.href
+    document.getElementById('page-url').addEventListener('click', function () {
+      var input = document.createElement('input')
+      input.value = window.location.href
+      document.body.appendChild(input)
+      input.select()
+      document.execCommand('copy')
+      document.body.removeChild(input)
+      document.getElementById('copied').innerText = '已复制'
+    })
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

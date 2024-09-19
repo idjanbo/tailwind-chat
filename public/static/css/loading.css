@@ -1,0 +1,99 @@
+.dot,
+figure {
+  position: absolute;
+  margin: auto;
+}
+.dot:nth-child(5),
+.white,
+figure {
+  bottom: 0;
+  left: 0;
+}
+figure {
+  top: 0;
+  right: 0;
+  width: 6.25em;
+  height: 6.25em;
+  animation: 2.4s linear infinite rotate;
+}
+.white {
+  top: 0;
+  right: 0;
+  background: #fff;
+  opacity: 0;
+  animation: 2.4s linear infinite flash;
+}
+.dot {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 100%;
+  transition: 1s;
+}
+.dot:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #f56c6c;
+  animation: 2.4s linear infinite dotsY;
+}
+.dot:nth-child(3) {
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #e6a23c;
+  animation: 2.4s linear infinite dotsX;
+}
+.dot:nth-child(4) {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #67c23a;
+  animation: 2.4s linear infinite dotsY;
+}
+.dot:nth-child(5) {
+  right: 0;
+  background: #4e88f3;
+  animation: 2.4s linear infinite dotsX;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    width: 6.25em;
+    height: 6.25em;
+  }
+  66% {
+    width: 1.8em;
+    height: 1.8em;
+  }
+  100% {
+    width: 6.25em;
+    height: 6.25em;
+    transform: rotate(360deg);
+  }
+}
+@keyframes dotsY {
+  66% {
+    width: 1.8em;
+  }
+  77% {
+    width: 0;
+  }
+}
+@keyframes dotsX {
+  66% {
+    height: 1.8em;
+  }
+  77% {
+    height: 0;
+  }
+}
+@keyframes flash {
+  33% {
+    border-radius: 0;
+  }
+  55% {
+    border-radius: 100%;
+  }
+}
