@@ -7,7 +7,7 @@
   <meta content="webkit" name="renderer" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
-  <title>欢迎光临</title>
+  <title>Welcome</title>
   <link href="/static/css/loading.css" rel="stylesheet">
   <style>
     * {
@@ -18,7 +18,7 @@
 </head>
 
 <body style="height: 100vh;">
-  <noscript>请开启浏览器 js 功能</noscript>
+  <noscript>please enable js ablity</noscript>
   <div id="app">
     <figure>
       <div class="dot white"></div>
@@ -31,12 +31,12 @@
       <div style="display: flex;justify-content: center;">
         <div></div>
         <div style="text-align: left;">
-          <h5>如<span style="color:red">长时间</span>停留在此页面</h5>
-          <h5>请更换浏览器使用</h5>
+          <h5>if<span style="color:red">long time</span>on this page</h5>
+          <h5>please change web brower</h5>
         </div>
         <div></div>
       </div>
-      <p style="color: gray;font-size: 11px;margin-top: 20px;">点击复制下面链接</p>
+      <p style="color: gray;font-size: 11px;margin-top: 20px;">click text to copy url</p>
       <div id="page-url" style="height: 20px;line-height: 20px;overflow: hidden;font-size: 11px;font-weight: 300;">
       </div>
       <p id="copied" style="font-size: 11px;color: gray;"></p>
@@ -51,7 +51,7 @@
       input.select()
       document.execCommand('copy')
       document.body.removeChild(input)
-      document.getElementById('copied').innerText = '已复制'
+      document.getElementById('copied').innerText = 'copied'
     })
   </script>
   <script type="module" src="/src/main.ts"></script>

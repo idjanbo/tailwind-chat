@@ -10,13 +10,34 @@
 # start
 
 ```shell
-cd [this project]
+## Clone
+git clone https://github.com/idjanbo/tailwind-chat.git
 
+## Install dependencies.
 pnpm i
 
+## Dev run
 pnpm dev
 
 ```
+
+# Demo route
+
+## home view
+
+```
+http://localhost:9089/validate/foo
+```
+
+## chat view
+
+```
+http://localhost:9089/anyType/foo
+```
+
+# components
+
+some components did by myself is at `src/components` path, Like `TailWind Toast`
 
 # config
 
@@ -70,3 +91,7 @@ export default {
 `npx eslint --init`
 
 for more:https://segmentfault.com/a/1190000041954694
+
+# Thx 4
+
+[demon-bixia/Avian-Template](https://github.com/demon-bixia/Avian-Template)

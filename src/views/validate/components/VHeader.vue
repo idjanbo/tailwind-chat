@@ -4,7 +4,7 @@
       <div class="flex grow">
         <a class="flex items-center text-2xl font-semibold text-gray-900 dark:text-white" href="#">
           <img alt="logo" class="w-8 h-8 mr-2" src="/src/assets/logo.svg" />
-          Your's welcome
+          <span>{{ name }}</span>
         </a>
       </div>
       <div class="relative">
@@ -20,6 +20,7 @@
 <script lang="ts" setup>
 import { useSettingsStore } from '/@/store/modules/settings'
 import { SunIcon, MoonIcon } from '@heroicons/vue/24/solid'
+import { name } from '~/package.json'
 
 const store = useSettingsStore()
 defineOptions({
