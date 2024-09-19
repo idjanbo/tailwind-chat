@@ -3,6 +3,25 @@
 ![chat.png](screenshots/chat.png)
 ![home.gif](screenshots/home.gif)
 
+# start
+
+```shell
+cd [this project]
+
+pnpm i
+
+pnpm dev
+
+```
+
+# config
+
+1. `.env` file is for host
+
+2. `src/net.config.ts` file is for server config
+
+> below is already use into this project,do not use again
+
 # create vite project
 
 `yarn create vite`
