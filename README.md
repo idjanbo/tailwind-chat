@@ -2,8 +2,8 @@
 
 <div align="center">
   <div style="display: flex;">
-    <img src="screenshots/chat.png" width="50%">
-    <img src="screenshots/home.gif" width="50%">
+    <img src="screenshots/chat.png" width="30%">
+    <img src="screenshots/home.gif" width="30%">
   </div>
 </div>
 
