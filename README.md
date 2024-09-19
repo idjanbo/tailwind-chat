@@ -1,7 +1,11 @@
 # screenshots
 
-![chat.png](screenshots/chat.png)
-![home.gif](screenshots/home.gif)
+<div align="center">
+  <div style="display: flex;">
+    <img src="screenshots/chat.png" width="50%">
+    <img src="screenshots/home.gif" width="50%">
+  </div>
+</div>
 
 # start
 
